@@ -1,0 +1,62 @@
+/* --- BASIC STYLES --- */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { 
+    background:#0a0a0a; 
+    color:#eee; 
+    font-family:Arial, sans-serif; 
+    overflow:hidden;
+}
+canvas { display:block; }
+
+/* --- INFO PANEL --- */
+#info {
+    position:absolute;
+    top:20px; left:20px;
+    background: rgba(15,15,15,0.95);
+    padding:20px; border-radius:8px;
+    max-width:220px; 
+    border:1px solid rgba(255,255,255,0.05);
+}
+
+#info h1 {
+    font-size:14px; margin-bottom:5px;
+    text-transform:uppercase; letter-spacing:0.5px;
+}
+
+#info .subtitle { font-size:10px; color:#777; margin-bottom:10px; }
+#current-time { font-size:24px; margin-bottom:5px; }
+#current-date { font-size:11px; color:#888; margin-bottom:10px; }
+
+.author {
+    font-size:9px; color:#aaa; margin-top:10px;
+}
+.author strong { color:#fff; font-weight:500; }
+.author .role { color:#888; font-size:8px; }
+
+/* --- RINGS LEGEND --- */
+.ring-legend { margin-top:12px; font-size:9px; color:#777; }
+.legend-section { margin-bottom:10px; }
+.legend-item { display:flex; align-items:center; margin:3px 0; }
+.legend-color { width:6px; height:6px; margin-right:6px; border-radius:1px; }
+
+/* --- CENTER HUB --- */
+#center { 
+    position:absolute; top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center; color:#fff;
+    font-family:Arial, sans-serif;
+}
+#center .year { font-size:14px; font-weight:bold; }
+#center .author { font-size:8px; color:#aaa; }
+
+/* --- CONTROLS --- */
+#controls {
+    position:absolute; bottom:20px; left:50%; transform:translateX(-50%);
+    display:flex; gap:5px;
+}
+.control-btn {
+    background:transparent; border:1px solid rgba(255,255,255,0.1);
+    color:#888; padding:5px 10px; font-size:10px;
+    cursor:pointer; border-radius:4px;
+}
+.control-btn.active { background:#fff; color:#0a0a0a; border-color:#fff; }

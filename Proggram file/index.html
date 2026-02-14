@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosmic Clock</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+
+<div id="info">
+    <h1>Cosmic Clock</h1>
+    <div class="subtitle">Time in concentric rings</div>
+    <div id="current-time">00:00:00</div>
+    <div id="current-date">Loading...</div>
+
+    <div class="author">
+        Developed by <strong>MD ATIQUL ISLAM (Atik)</strong><br>
+        <span class="role">Software Engineer</span>
+    </div>
+
+    <div class="ring-legend">
+        <div class="legend-section">
+            <div class="legend-item"><div class="legend-color" style="background:#ef4444;"></div>Seconds</div>
+            <div class="legend-item"><div class="legend-color" style="background:#f59e0b;"></div>Minutes</div>
+            <div class="legend-item"><div class="legend-color" style="background:#06b6d4;"></div>Hours</div>
+        </div>
+        <div class="legend-section">
+            <div class="legend-item"><div class="legend-color" style="background:#10b981;"></div>Day</div>
+            <div class="legend-item"><div class="legend-color" style="background:#8b5cf6;"></div>Week</div>
+            <div class="legend-item"><div class="legend-color" style="background:#ec4899;"></div>Month</div>
+        </div>
+    </div>
+</div>
+
+<div id="center">
+    <div class="year" id="center-year">2026</div>
+    <div class="author">MD ATIQUL ISLAM (Atik)<br>Software Engineer</div>
+</div>
+
+<div id="controls">
+    <button class="control-btn active" data-speed="1">1x</button>
+    <button class="control-btn" data-speed="60">1m/s</button>
+    <button class="control-btn" data-speed="3600">1h/s</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
